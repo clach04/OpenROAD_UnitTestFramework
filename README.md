@@ -185,13 +185,15 @@ A test application can be run interactively from the OpenROAD Workbench using a 
 
 In order to run tests from the command line you can use the following command:
 
-w4gldev rundbapp _database testapplication_ -Llogfile -Tyes
+    w4gldev rundbapp TEST_DATABASE TEST_APPLICATION -Llogfile -Tyes
 
 There is also a script file `or_tests.bash` (and wrapper batch script `or_tests.bat` for Windows calling `or_tests.bash`),
 which will execute all test case applications which have been placed as XML export files in the `unitests` subdirectory.
 This script will import the UnitTestFramework application from the 'UnitTestFramework.xml' file before importing and executing other test applications in the `unitests` subdirectory.
 
-Usage:    bash or_tests.bash _testdatabase_
+Usage:
+
+    bash or_tests.bash TEST_DATABASE
 
 The script will also print out the test results to the console.
 
